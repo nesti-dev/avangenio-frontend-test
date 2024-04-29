@@ -34,6 +34,7 @@ const games = [
     {
         platform: 'party',
         name: 'Game 3',
+        background: 'src/assets/images/1_75884dd9-8acc-45de-b09c-66c5d0f875e5.jpeg',
         teams: [
             {name: 'Team 7'},
             {name: 'Team 8'},
@@ -43,6 +44,7 @@ const games = [
     {
         platform: 'match',
         name: 'Game 4',
+        background: 'src/assets/images/2_75884dd9-8acc-45de-b09c-66c5d0f875e5.jpeg',
         teams: [
             {name: 'Team 10'},
             {name: 'Team 11'},
@@ -52,6 +54,7 @@ const games = [
     {
         platform: 'match',
         name: 'Game 5',
+        background: 'src/assets/images/2_75884dd9-8acc-45de-b09c-66c5d0f875e5.jpeg',
         teams: [
             {name: 'Team 13'},
             {name: 'Team 14'},
@@ -61,6 +64,7 @@ const games = [
     {
         platform: 'stream',
         name: 'Game 6',
+        background: 'src/assets/images/1_75884dd9-8acc-45de-b09c-66c5d0f875e5.jpeg',
         teams: [
             {name: 'Team 16'},
             {name: 'Team 17'},
