@@ -1,0 +1,121 @@
+.categories-container {
+    width: 100%;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.categories-header {
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.categories-title {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    align-items: start;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.category-card {
+    position: relative;
+    border: 1px solid var(--card-border-color);
+    border-radius: 1rem;
+    height: 8rem;
+
+    transition: ease-in-out;
+    transition-duration: 0.1s;
+
+    object-fit: cover;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow: 0 0 10px 3px var(--card-shadow-01);
+}
+
+.category-card:hover {
+    box-shadow: 0 0 10px 3px var(--card-shadow-02);
+}
+
+.category-title {
+    position: absolute;
+    z-index: 2;
+    left: 1rem;
+    bottom: 1rem;
+
+    color: var(--title-color);
+    font-size: 1.25rem;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.category-card:hover .category-title {
+    top: 1rem;
+    bottom: 0;
+}
+
+.category-filter {
+    border-radius: 1rem;
+    height: 8rem;
+
+    background-color: var(--filter-background-color-05);
+    backdrop-filter: blur(1px);
+}
+
+.category-card:hover .category-filter {
+    background-color: var(--filter-background-color-02);
+}
+
+@media(min-width: 768px) {
+    .categories-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .categories-title {
+        margin-bottom: 1.5rem;
+        font-size: 2.25rem;
+        line-height: 1.2;
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+    }
+}
+
+@media(min-width: 992px) {
+    .categories-container {
+        max-width: 992px;
+    }
+
+    .categories-header {
+        margin-bottom: 2rem;
+    }
+
+    .categories-title {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+@media(min-width: 1200px) {
+    .categories-container {
+        max-width: 1200px;
+    }
+}

@@ -1,0 +1,504 @@
+.heading-container {
+    min-height: calc(100vh - 5rem);
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.heading-section-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    align-items: start;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.heading-section-container {
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--heading-background-color);
+}
+
+.first-section-container {
+    height: calc(100vh - 5rem);
+    border: 1px solid var(--border-color);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.first-section-title {
+    font-size: 3.75rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.first-section-title span {
+    color: var(--span-color);
+}
+
+.first-section-subtitle {
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.first-section-subtitle span {
+    color: var(--span-color);
+}
+
+.first-section-btn {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+
+.first-section-btn button {
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 10px 3px var(--button-shadow-01);
+}
+
+.first-section-btn button:hover {
+    box-shadow: 0 2px 10px 3px var(--button-shadow-02);
+}
+
+.sign-in-btn,
+.sign-up-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    white-space: nowrap;
+    border: 1px solid var(--button-border-color);
+    background-color: var(--button-background-color);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    color: var(--button-color);
+}
+
+
+
+
+
+.second-section-container {
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    padding: 0;
+}
+
+.team-background-wrapper {
+    position: relative;
+}
+
+.team-background {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.team-background-filter {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    background-color: var(--filter-background-color-02);
+    backdrop-filter: blur(1px);
+}
+
+.team-background-title {
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--title-color);
+}
+
+
+
+
+
+.third-section-container {
+    border: 1px solid var(--border-color);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.third-section-inner-container {
+    margin-bottom: 2rem;
+    width: 100%;
+    text-align: start;
+}
+
+.third-section-inner-container:last-child {
+    margin-bottom: 0;
+}
+
+.third-section-title {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.third-section-title span {
+    font-weight: 700;
+}
+
+.platform-selector {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--background-color);
+}
+
+.platform-selector-btn {
+    background-color: var(--button-alternative-background-color);
+    border: 1px solid var(--button-alternative-border-color);
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    color: var(--button-alternative-color);
+}
+
+.platform-selector-btn:hover {
+    box-shadow: 0 2px 10px 3px var(--button-shadow-02);
+}
+
+.platform-selector-btn.active {
+    background-color: var(--button-background-color);
+    color: var(--button-color);
+    box-shadow: 0 2px 10px 3px var(--button-shadow-02);
+}
+
+.game {
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    background-color: var(--background-color);
+}
+
+.game-title {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+.team-selector {
+    height: 19.5rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    margin-bottom: 1rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.team {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 26px 1fr auto;
+    gap: 1rem;
+    align-items: end;
+}
+
+.team-id {
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    background-color: var(--button-alternative-background-color);
+}
+
+.team-title {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.team-add-btn {
+    position: relative;
+    border: 1px solid var(--button-alternative-border-color);
+    border-radius: 0.5rem;
+    background-color: var(--button-alternative-background-color);
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    width: 26px;
+    height: 26px;
+    color: var(--button-alternative-color);
+}
+
+.team-add-btn:hover {
+    box-shadow: 0 2px 10px 3px var(--button-shadow-02);
+}
+
+.team-add-btn span {
+    position: absolute;
+    left: 6.75px;
+    bottom: 1px;
+}
+
+.search-btn {
+    border: 1px solid var(--button-border-color);
+    border-radius: 0.5rem;
+    background-color: var(--button-background-color);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    width: calc(100% - 2rem);
+    color: var(--button-color);
+    box-shadow: 0 2px 10px 3px var(--button-shadow-01);
+}
+
+.search-btn:hover {
+    box-shadow: 0 2px 10px 3px var(--button-shadow-02);
+}
+
+
+
+
+
+@media(min-width: 768px) {
+    .heading-container {
+        max-height: calc(100vh - 8rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading-section-wrapper {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .heading-section-container {
+        height: 100%;
+    }
+
+    .first-section-container {
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1rem;
+    }
+
+    .first-section-title {
+        font-size: 2.5rem;
+    }
+
+
+
+
+
+    .second-section-container {
+        border-left: 0;
+        border-right: 0;
+        border-top: 1px solid var(--border-color);
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .team-background-wrapper {
+        height: 100%;
+    }
+
+    .team-background {
+        height: 100%;
+    }
+
+
+
+
+
+    .third-section-container {
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .third-section-inner-container {
+        margin-bottom: 1rem;
+    }
+
+    .platform-selector {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .platform-selector-btn {
+        padding: initial;
+    }
+
+    .game-title {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .team-selector {
+        margin-bottom: 0.5rem;
+        max-height: 15rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .team {
+        gap: 0.5rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .search-btn {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media(min-width: 992px) {
+    .heading-container {
+        max-width: 992px;
+    }
+
+    .heading-section-container {
+        max-height: 90%;
+    }
+
+    .first-section-container {
+        margin-top: auto;
+        margin-bottom: auto;
+
+        border: 1px solid var(--border-color);
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        align-items: start;
+    }
+
+    .first-section-title {
+        text-align: start;
+        font-size: 3rem;
+    }
+
+    .first-section-subtitle {
+        text-align: start;
+    }
+
+    .first-section-btn {
+        margin-top: 7rem;
+        margin-bottom: 1rem;
+    }
+
+
+
+
+
+    .second-section-container {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .team-background-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
+
+    .third-section-container {
+        margin-top: auto;
+        margin-bottom: auto;
+        border: 1px solid var(--border-color);
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    .third-section-inner-container {
+        margin-bottom: 2rem;
+    }
+
+    .platform-selector {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .game-title {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .team-selector {
+        margin-bottom: 1rem;
+    }
+
+    .search-btn {
+        margin-bottom: 1rem;
+    }
+}
+
+@media(min-width: 1200px) {
+    .heading-container {
+        max-width: 1200px;
+    }
+
+    .heading-section-container {
+        height: 80%;
+    }
+
+    .first-section-container {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+
+    .first-section-title {
+        font-size: 3.5rem;
+    }
+
+    .third-section-container{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}

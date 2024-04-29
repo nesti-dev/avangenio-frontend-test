@@ -1,0 +1,19 @@
+.sign-in {
+    margin-top: 1.25rem;
+    width: 100%;
+    text-align: center;
+}
+
+.sign-in p {
+    display: none;
+}
+
+.sign-in a {
+    text-decoration-line: underline;
+}
+
+@media(min-width: 768px) {
+    .sign-in p {
+        display: block;
+    }
+}
